@@ -9,11 +9,7 @@ public class RandomSeedController : MonoBehaviour
     public TextMeshProUGUI textMeshProUGUI;
     public TraitGeneration traitGeneration;
 
-    private void Update()
-    {
-        textMeshProUGUI.text = currentSeed.ToString(); 
-    }
-
+    
     private void Awake() =>  GenerateRandomSeed();
 
     //Generate Random seed for the system
@@ -26,6 +22,7 @@ public class RandomSeedController : MonoBehaviour
 
         traitGeneration.GestionUi(currentSeed);
         traitGeneration.SplitSeedDigits(currentSeed.ToString());
+        textMeshProUGUI.text = currentSeed.ToString();
     }
 
 }

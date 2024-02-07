@@ -27,6 +27,10 @@ public class TraitGeneration : MonoBehaviour
     public TextMeshProUGUI trait02Text;
     public TextMeshProUGUI trait03Text;
 
+    public TMP_InputField inputField;
+    public RandomSeedController randomSeed;
+    public RandomisationPerso randomisationPerso;
+
     public List<int> seedList = new List<int>();
 
     public void GestionUi(int seed)// with all seed
@@ -39,6 +43,12 @@ public class TraitGeneration : MonoBehaviour
         {
             isMen = false; sexText.text = "Sex : Girl";
         }
+    }
+
+    public void GetInputField()
+    {
+        SplitSeedDigits(inputField.text);
+        randomSeed.textMeshProUGUI.text = inputField.text;
     }
 
     public void SplitSeedDigits(string seed)// Split seed 
@@ -61,46 +71,220 @@ public class TraitGeneration : MonoBehaviour
 
         seedList.Reverse();
 
+        
 
+        PlayerSeed();
+        randomisationPerso.RandomizeCharacter();
+    }
+
+
+    void PlayerSeed()
+    {
         if (isMen)
         {
             nameText.text = "Name : " + nameBoy[seedList[0]];
-            
+
         }
         else
         {
             nameText.text = "Name : " + nameGirl[seedList[0]];
-             
+
         }
 
-        ageText.text = "Age : " + seedList[0] + seedList[1];
-        corpuText.text = "Corpulence : " + corpulence[seedList[2]];
-        tailleText.text = "Taille : " + taille[seedList[3]];
-        trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
-        trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
-        trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
-
-    }
-
-    /*void PlayerSeed(int seed)
-    {
-        switch (seed)
+        switch (seedList.Count)
         {
             case 0:
+                Debug.Log("Seed egale a null");
+                
                 break;
-            case 0:
+            case 1:
+                Debug.Log("Seed count =  1");
+
+                if (seedList[0] != 0 && seedList[0] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[0];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[0];
+                }
+                
+                corpuText.text = "Corpulence : " + corpulence[seedList[0]];
+                tailleText.text = "Taille : " + taille[seedList[0]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[0]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
                 break;
-            case 0:
+            case 2:
+                Debug.Log("Seed count =  2");
+
+                if (seedList[0] != 0 && seedList[1] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1];
+                } 
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[0]];
+                tailleText.text = "Taille : " + taille[seedList[1]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[1]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
                 break;
-            case 0:
+            case 3:
+                Debug.Log("Seed count =  3");
+
+                if (seedList[0] != 0 && seedList[1] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[2]];
+                tailleText.text = "Taille : " + taille[seedList[0]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[1]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[2]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
                 break;
-            case 0:
+            case 4:
+                Debug.Log("Seed count =  4");
+
+                if (seedList[0] != 0 && seedList[1] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[2]];
+                tailleText.text = "Taille : " + taille[seedList[3]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[1]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[2]];
                 break;
-            case 0:
+            case 5:
+                Debug.Log("Seed count =  5");
+
+                if (seedList[0] != 0 && seedList[1] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[2]];
+                tailleText.text = "Taille : " + taille[seedList[3]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[0]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[1]];
                 break;
-            case 0:
+            case 6:
+                Debug.Log("Seed count =  6");
+
+                if (seedList[0] != 0 && seedList[1] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[2]];
+                tailleText.text = "Taille : " + taille[seedList[3]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
                 break;
+            case 7:
+                Debug.Log("Seed count =  7");
+
+                if (seedList[0] != 0 && seedList[1] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[2]];
+                tailleText.text = "Taille : " + taille[seedList[3]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+                break;
+            case 8:
+                Debug.Log("Seed count =  8");
+
+                if (seedList[0] != 0 && seedList[1] != 0 && seedList[7] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1] * seedList[7];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1] + seedList[7];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[2]];
+                tailleText.text = "Taille : " + taille[seedList[3]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+                break;
+            case 9:
+                Debug.Log("Seed count =  9");
+
+                if (seedList[0] != 0 && seedList[1] != 0 && seedList[7] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1] * seedList[7];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1] + seedList[7];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[2]];
+                tailleText.text = "Taille : " + taille[seedList[3]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+                break;
+            case 10:
+                Debug.Log("Seed count =  10");
+
+                if (seedList[0] != 0 && seedList[1] != 0 && seedList[7] != 0)
+                {
+                    ageText.text = "Age : " + seedList[0] * seedList[1] * seedList[7];
+                }
+                else
+                {
+                    ageText.text = "Age : " + seedList[0] + seedList[1] + seedList[7];
+                }
+
+                corpuText.text = "Corpulence : " + corpulence[seedList[2]];
+                tailleText.text = "Taille : " + taille[seedList[3]];
+                trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
+                trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
+                trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+                break;
+            case >= 11:
+                Debug.Log(" Seed pas pris en compte ");      
+                break;
+            
 
         }
-    }*/
+        
+    }
+
+   
 }
