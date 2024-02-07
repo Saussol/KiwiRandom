@@ -9,14 +9,14 @@ public class TraitGeneration : MonoBehaviour
     public int age; // 
 
     private string[] nameGirl = new string[] { "Lea", "Marine", "Ines", "Fanny", "juliette", "Mathilda", "Lynoa", "Lena", "Celia", "Berenice" };
-    private string[] nameBoy = new string[] { "Davide", "Nicolas", "Romain", "Julien", "Damien", "Gabin", "Adrien", "Jean", "Jules", "Arthur" };
+    private string[] nameBoy = new string[] { "David", "Nicolas", "Romain", "Julien", "Damien", "Gabin", "Adrien", "Jean", "Jules", "Arthur" };
 
-    private string[] corpulence = new string[] { "Sac d'os","Tres Tres maigre", "Tres maigre", "Maigre", "Standar", "Musclé", "Gros", "Tres gros", "Tres tres gros", "Obesiter Legendaire" };
-    private string[] taille = new string[] { "Jouet 10cm","Gnome 50cm", "Nain 1m", "De petit taille 1m50", "Standar 1m75", "Grand 1m90", "Tres Grand 2m", "Geant 2m20", "Titan 3m", "immeuble 6m"};
+    private string[] corpulence = new string[] { "Sac d'os","Tres Tres maigre", "Tres maigre", "Maigre", "Standard", "Musclé", "Gros", "Tres gros", "Tres tres gros", "Obese" };
+    private string[] taille = new string[] { "Jouet 10cm","Gnome 50cm", "Nain 1m", "De petit taille 1m50", "Standard 1m75", "Grand 1m90", "Tres Grand 2m", "Geant 2m20", "Titan 3m", "immeuble 6m"};
 
-    private string[] trait01 = new string[] { "Adroit", "Affectueux", "Aimable", "Agressif ", "Amusant", "Arrogant", "Audacieux", "Attachant", "Attendrissant", "Asocial" };
-    private string[] trait02 = new string[] { "Beau parleur", "Bête", "Bienveillant", "Brave ", "Brutal", "Belliqueux", "Bout-en-train" , "Brillant" , "Bavard " , "Brillant" };
-    private string[] trait03 = new string[] { "Chanceux", "Chaleureux", "Cinglé", "Comique ", "Consciencieux", "Courageux", "Cupide", "Créatif", "Courtois", "Cynique" };
+    private string[] trait01 = new string[] { "Adroit", "Affectueux", "Aimable", "Agressif", "Amusant", "Arrogant", "Audacieux", "Attachant", "Attendrissant", "Asocial" };
+    private string[] trait02 = new string[] { "Beau parleur", "Bête", "Bienveillant", "Brave", "Brutal", "Belliqueux", "Bout-en-train" , "Brillant" , "Bavard" , "Brillant" };
+    private string[] trait03 = new string[] { "Chanceux", "Chaleureux", "Cinglé", "Comique", "Consciencieux", "Courageux", "Cupide", "Créatif", "Courtois", "Cynique" };
 
     public TextMeshProUGUI nameText;
     public TextMeshProUGUI ageText;
@@ -79,7 +79,6 @@ public class TraitGeneration : MonoBehaviour
         trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
         trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
         trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
-
     }
 
     /*void PlayerSeed(int seed)
