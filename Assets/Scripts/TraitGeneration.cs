@@ -14,7 +14,7 @@ public class TraitGeneration : MonoBehaviour
     private string[] corpulence = new string[] { "Sac d'os","Tres Tres maigre", "Tres maigre", "Maigre", "Standar", "Musclé", "Gros", "Tres gros", "Tres tres gros", "Obesiter Legendaire" };
     private string[] taille = new string[] { "Jouet 10cm","Gnome 50cm", "Nain 1m", "De petit taille 1m50", "Standar 1m75", "Grand 1m90", "Tres Grand 2m", "Geant 2m20", "Titan 3m", "immeuble 6m"};
 
-    private string[] trait01 = new string[] { "Adroit", "Affectueux", "Aimable", "Agressif ", "Amusant", "Arrogant", "Audacieux", "Attachant", "Attendrissant", "Asocial" };
+    private string[] trait01 = new string[] { "Adroit", "Affectueux", "Aimable", "Agressif", "Amusant", "Arrogant", "Audacieux", "Attachant", "Attendrissant", "Asocial" };
     private string[] trait02 = new string[] { "Beau parleur", "Bête", "Bienveillant", "Brave ", "Brutal", "Belliqueux", "Bout-en-train" , "Brillant" , "Bavard " , "Brillant" };
     private string[] trait03 = new string[] { "Chanceux", "Chaleureux", "Cinglé", "Comique ", "Consciencieux", "Courageux", "Cupide", "Créatif", "Courtois", "Cynique" };
 
@@ -74,9 +74,10 @@ public class TraitGeneration : MonoBehaviour
         
 
         PlayerSeed();
-        randomisationPerso.RandomizeCharacter();
+        //randomisationPerso.RandomizeCharacter();
     }
 
+    
 
     void PlayerSeed()
     {
@@ -114,6 +115,39 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[0]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
+
+
+
+                //Body
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[0]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[0]];
+                if (trait01[seedList[0]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0]; Debug.Log("mais ouii c'est calir");
+                }
+                else if (trait01[seedList[0]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[0]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[0]];
+                }
+                randomisationPerso.brasD.sprite = randomisationPerso.brasDL[seedList[0]];
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[0]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[0]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[0]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[0]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[0]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
+
                 break;
             case 2:
                 Debug.Log("Seed count =  2");
@@ -132,6 +166,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[1]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[0]];
+                randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[1]];
+                if (trait01[seedList[0]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[0]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[0]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[1]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[0]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[1]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[1]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[0]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case 3:
                 Debug.Log("Seed count =  3");
@@ -150,6 +213,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[1]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[2]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[2]];
+                if (trait01[seedList[1]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[1]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[1]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasD.sprite = randomisationPerso.brasDL[seedList[1]];
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[2]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[0]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[1]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[2]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[0]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case 4:
                 Debug.Log("Seed count =  4");
@@ -168,6 +260,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[1]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[2]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[2]];
+                if (trait01[seedList[3]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[3]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[3]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasD.sprite = randomisationPerso.brasDL[seedList[0]];
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[1]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[2]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[3]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[0]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[1]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case 5:
                 Debug.Log("Seed count =  5");
@@ -186,6 +307,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[0]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[1]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[2]];
+                if (trait01[seedList[4]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[4]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[4]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasD.sprite = randomisationPerso.brasDL[seedList[4]];
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[0]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[1]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[2]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[3]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[4]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case 6:
                 Debug.Log("Seed count =  6");
@@ -204,6 +354,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[2]];
+                if (trait01[seedList[4]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[4]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[4]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasD.sprite = randomisationPerso.brasDL[seedList[4]];
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[5]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[0]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[1]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[2]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[3]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case 7:
                 Debug.Log("Seed count =  7");
@@ -222,6 +401,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[2]];
+                if (trait01[seedList[4]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[4]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[4]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasD.sprite = randomisationPerso.brasDL[seedList[4]];
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[5]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[6]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[0]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[2]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[3]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case 8:
                 Debug.Log("Seed count =  8");
@@ -240,6 +448,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[2]];
+                randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                if (trait01[seedList[4]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[4]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[4]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[5]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[6]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[7]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[0]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[1]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case 9:
                 Debug.Log("Seed count =  9");
@@ -258,6 +495,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[2]];
+                if (trait01[seedList[4]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[4]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[4]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasD.sprite = randomisationPerso.brasDL[seedList[4]];
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[5]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[6]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[7]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[8]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[0]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case 10:
                 Debug.Log("Seed count =  10");
@@ -276,6 +542,35 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+
+                randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
+                randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
+                randomisationPerso.antennesG.sprite = randomisationPerso.antennesGL[seedList[2]];
+                if (trait01[seedList[4]] == "Agressif")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[0];
+                }
+                else if (trait01[seedList[4]] == "Amusant")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[4];
+                }
+                else if (trait01[seedList[4]] == "Asocial")
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[7];
+                }
+                else
+                {
+                    randomisationPerso.bouche.sprite = randomisationPerso.boucheL[seedList[3]];
+                }
+                randomisationPerso.brasD.sprite = randomisationPerso.brasDL[seedList[4]];
+                randomisationPerso.brasG.sprite = randomisationPerso.brasGL[seedList[5]];
+                randomisationPerso.jambesD.sprite = randomisationPerso.jambesDL[seedList[6]];
+                randomisationPerso.jambesG.sprite = randomisationPerso.jambesGL[seedList[7]];
+                randomisationPerso.nez.sprite = randomisationPerso.nezL[0];
+                randomisationPerso.yeuxD.sprite = randomisationPerso.yeuxDL[seedList[8]];
+                randomisationPerso.yeuxG.sprite = randomisationPerso.yeuxGL[seedList[9]];
+                randomisationPerso.SoucilD.sprite = randomisationPerso.SoucilDL[0];
+                randomisationPerso.SoucilG.sprite = randomisationPerso.SoucilGL[0];
                 break;
             case >= 11:
                 Debug.Log(" Seed pas pris en compte ");      
@@ -285,6 +580,9 @@ public class TraitGeneration : MonoBehaviour
         }
         
     }
+
+   
+    
 
    
 }
