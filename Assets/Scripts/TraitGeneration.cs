@@ -26,6 +26,7 @@ public class TraitGeneration : MonoBehaviour
     public TextMeshProUGUI trait01Text;
     public TextMeshProUGUI trait02Text;
     public TextMeshProUGUI trait03Text;
+    public TextMeshProUGUI traitText;
 
     public TMP_InputField inputField;
     public RandomSeedController randomSeed;
@@ -115,7 +116,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[0]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
-
+                //Sentence();
 
 
                 //Body
@@ -166,6 +167,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[1]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -213,6 +215,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[1]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[2]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -260,6 +263,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[1]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[2]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -307,6 +311,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[0]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[1]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -354,6 +359,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -401,6 +407,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -448,6 +455,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -495,6 +503,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -542,6 +551,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
+                //Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -581,8 +591,22 @@ public class TraitGeneration : MonoBehaviour
         
     }
 
-   
-    
 
-   
+    /*void Sentence(string trait01)
+    {
+
+
+        if (trait01[seedList[0]] == "Adroit")
+        {
+            int index = 0;
+            if (!isMen) index = 1;
+            if (age > 499) index = 2;
+            traitText.text = adroit[index];
+
+        }
+
+        string sentence = "Voici " + (isMen ? "un garçon" : "une fille") + " nommé " + nameText.text.Substring(7) + ", âgé de " + ageText.text.Substring(6) + " an(s)" +
+            ", de corpulence " + corpuText.text.Substring(13) + " et de taille " + tailleText.text.Substring(8) + ". Ses traits sont : " +
+            trait01Text.text.Substring(10) + ", " + trait02Text.text.Substring(10) + ", " + trait03Text.text.Substring(10) + ".";
+    }*/
 }
