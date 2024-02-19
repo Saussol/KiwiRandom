@@ -154,7 +154,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.19959424, y: 0.3615302}
   m_AnchorMax: {x: 0.342, y: 0.4527374}
@@ -230,7 +229,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -462,7 +460,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 404961689}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0.3571667, y: 1}
@@ -502,7 +499,6 @@ RectTransform:
   m_Children:
   - {fileID: 1834523360}
   m_Father: {fileID: 404961689}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
@@ -634,7 +630,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -769,7 +764,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: -20, y: 180, z: 0}
   m_AnchorMin: {x: 0.11940578, y: 0.24242419}
   m_AnchorMax: {x: 0.1971981, y: 0.55863136}
@@ -845,7 +839,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -980,7 +973,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.21000001, y: 0.609}
   m_AnchorMax: {x: 0.2571981, y: 0.64526266}
@@ -1123,12 +1115,12 @@ RectTransform:
   m_Children:
   - {fileID: 139813679}
   - {fileID: 135024496}
+  - {fileID: 1313527592}
   - {fileID: 1809776050}
   - {fileID: 414728896}
   - {fileID: 1584024280}
   - {fileID: 683118299}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1173,6 +1165,7 @@ MonoBehaviour:
   trait02Text: {fileID: 130715028}
   trait03Text: {fileID: 244419358}
   traitText: {fileID: 135024494}
+  phraseTraitText: {fileID: 1313527593}
   inputField: {fileID: 414728897}
   randomSeed: {fileID: 404961690}
   randomisationPerso: {fileID: 683118300}
@@ -1209,7 +1202,6 @@ RectTransform:
   - {fileID: 596832774}
   - {fileID: 1101353417}
   m_Father: {fileID: 414728896}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1263,7 +1255,6 @@ RectTransform:
   m_Children:
   - {fileID: 410811196}
   m_Father: {fileID: 404961689}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1438,7 +1429,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 410811196}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -1593,7 +1583,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1744,7 +1733,6 @@ RectTransform:
   - {fileID: 2107218627}
   - {fileID: 296908717}
   m_Father: {fileID: 404961689}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2107,7 +2095,106 @@ MonoBehaviour:
   - "A toujours eu un temp\xE9rament explosif."
   - "Cherche souvent le conflit plut\xF4t que la conciliation."
   - Affiche une attitude hostile envers ceux qui le contrarient.
-  adjectifs: []
+  amusant:
+  - "A toujours \xE9t\xE9 le centre de l'attention avec son humour."
+  - Anime les rassemblements avec des blagues et des anecdotes.
+  - "Fait de chaque moment une occasion de rire et de d\xE9tente."
+  arrogant:
+  - "A toujours agi avec un air de sup\xE9riorit\xE9."
+  - Se croit souvent au-dessus des autres.
+  - "Refuse g\xE9n\xE9ralement d'admettre ses erreurs."
+  audacieux:
+  - "A toujours os\xE9 relever les d\xE9fis les plus difficiles."
+  - "Se lance dans des aventures risqu\xE9es sans h\xE9sitation."
+  - "Est pr\xEAt \xE0 prendre des risques pour atteindre ses objectifs."
+  attachant:
+  - "A toujours su charmer les autres par sa personnalit\xE9 chaleureuse."
+  - "Cr\xE9e facilement des liens affectifs avec ceux qu'il rencontre."
+  - "Poss\xE8de un pouvoir naturel d'attirer la sympathie."
+  attendrissant:
+  - "A toujours touch\xE9 les c\u0153urs par sa sensibilit\xE9."
+  - Inspire de la compassion et de la tendresse chez les autres.
+  - "D\xE9gage une aura de douceur et de vuln\xE9rabilit\xE9."
+  associal:
+  - "A toujours pr\xE9f\xE9r\xE9 la solitude \xE0 la compagnie des autres."
+  - "\xC9vite les interactions sociales autant que possible."
+  - "Se sent plus \xE0 l'aise dans son propre monde."
+  beauParleur:
+  - A toujours su convaincre avec ses mots.
+  - "Enchante son auditoire avec son \xE9loquence."
+  - "Poss\xE8de un don pour persuader et influencer."
+  bete:
+  - "A toujours eu du mal \xE0 comprendre les choses simples."
+  - "Se laisse souvent guider par ses instincts plut\xF4t que par sa raison."
+  - Ne brille pas par son intelligence.
+  bienveillant:
+  - A toujours agi avec empathie et compassion.
+  - "Se soucie sinc\xE8rement du bien-\xEAtre des autres."
+  - "Offre son soutien inconditionnel \xE0 ceux qui en ont besoin."
+  brave:
+  - "A toujours fait preuve de courage face \xE0 l'adversit\xE9."
+  - "Affronte les d\xE9fis avec d\xE9termination et intr\xE9pidit\xE9."
+  - Ne recule jamais devant les obstacles.
+  brutal:
+  - "A toujours r\xE9solu les probl\xE8mes par la force."
+  - Adopte une approche agressive dans ses interactions.
+  - "Ne montre aucune piti\xE9 envers ses ennemis."
+  belliqueux:
+  - "A toujours \xE9t\xE9 enclin \xE0 se battre pour ce qu'il croit \xEAtre juste."
+  - Cherche souvent la confrontation pour affirmer sa position.
+  - "Poss\xE8de un temp\xE9rament querelleur et agressif."
+  boutEnTrain:
+  - "A toujours anim\xE9 les rassemblements avec sa joie de vivre."
+  - "Apporte une ambiance joyeuse et enjou\xE9e o\xF9 qu'il aille."
+  - "Est toujours pr\xEAt \xE0 faire rire les autres."
+  brillant:
+  - "A toujours \xE9bloui par son intelligence exceptionnelle."
+  - "Se distingue par sa capacit\xE9 \xE0 r\xE9soudre les probl\xE8mes complexes."
+  - Brille dans tous les domaines qu'il aborde.
+  bavard:
+  - "A toujours eu du mal \xE0 garder sa langue dans sa poche."
+  - "Parle sans arr\xEAt, souvent sans r\xE9fl\xE9chir."
+  - Remplit l'espace avec un flot incessant de paroles.
+  chanceux:
+  - "A toujours eu la chance du d\xE9butant."
+  - "Semble attirer les bonnes opportunit\xE9s."
+  - Vit une vie pleine de bonnes surprises.
+  chaleureux:
+  - "A toujours r\xE9chauff\xE9 les c\u0153urs avec son empathie."
+  - "Irradie une chaleur humaine qui r\xE9conforte les autres."
+  - "Cr\xE9e des liens \xE9troits gr\xE2ce \xE0 sa bienveillance."
+  cingle:
+  - "A toujours eu des id\xE9es folles et impr\xE9visibles."
+  - "D\xE9fie souvent les normes avec son comportement excentrique."
+  - "Fait des choses que la plupart des gens consid\xE9reraient comme insens\xE9es."
+  comique:
+  - A toujours fait rire les autres avec son sens de l'humour.
+  - "Cr\xE9e des moments hilarants avec ses blagues et ses fac\xE9ties."
+  - "Poss\xE8de un talent naturel pour divertir et amuser."
+  consciencieux:
+  - "A toujours agi avec diligence et s\xE9rieux dans tout ce qu'il fait."
+  - "Accorde une grande importance aux d\xE9tails et \xE0 la qualit\xE9 du travail."
+  - Fait preuve d'un engagement constant envers l'excellence.
+  courageux:
+  - "A toujours fait preuve de bravoure face aux d\xE9fis."
+  - "N'h\xE9site pas \xE0 affronter l'adversit\xE9 avec d\xE9termination."
+  - "Se distingue par sa force int\xE9rieure et sa r\xE9silience."
+  cupide:
+  - "A toujours \xE9t\xE9 obs\xE9d\xE9 par l'accumulation de richesses."
+  - "Recherche constamment son int\xE9r\xEAt personnel au d\xE9triment des autres."
+  - "Ne pense qu'\xE0 s'enrichir, peu importe les cons\xE9quences."
+  creatif:
+  - "A toujours \xE9t\xE9 un v\xE9ritable g\xE9nie cr\xE9atif."
+  - "Imagine des solutions innovantes aux probl\xE8mes."
+  - "Transforme les id\xE9es en \u0153uvres d'art avec aisance."
+  courtois:
+  - A toujours agi avec politesse et respect envers autrui.
+  - "Se comporte de mani\xE8re courtoise dans toutes les situations."
+  - "Cultive des relations harmonieuses gr\xE2ce \xE0 son attitude respectueuse."
+  cynique:
+  - "A toujours adopt\xE9 une vision pessimiste de la vie."
+  - "Doute souvent des intentions des autres et de la sinc\xE9rit\xE9 des actions."
+  - "Voit le monde \xE0 travers un prisme de scepticisme et de m\xE9fiance."
 --- !u!114 &683118301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2202,7 +2289,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2392,13 +2478,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &963194225
 GameObject:
@@ -2484,13 +2570,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1101353416
 GameObject:
@@ -2523,7 +2609,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 410811196}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -2658,7 +2743,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2793,7 +2877,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -2928,7 +3011,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.1447923, y: 0}
   m_AnchorMax: {x: 0.27160385, y: 0.33052528}
@@ -3004,7 +3086,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.26680192, y: 0.40710607}
   m_AnchorMax: {x: 0.2891981, y: 0.4527374}
@@ -3080,7 +3161,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.172, y: 0.22316153}
   m_AnchorMax: {x: 0.37565187, y: 0.7154193}
@@ -3185,13 +3265,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1253910787}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1269340817
 GameObject:
@@ -3224,7 +3304,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.298, y: 0.53426266}
   m_AnchorMax: {x: 0.342, y: 0.609}
@@ -3269,6 +3348,140 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1269340817}
   m_CullTransparentMesh: 1
+--- !u!1 &1313527591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1313527592}
+  - component: {fileID: 1313527594}
+  - component: {fileID: 1313527593}
+  m_Layer: 5
+  m_Name: PhrasetraitDeux
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1313527592
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313527591}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 404961689}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0.185}
+  m_AnchorMax: {x: 0.31968755, y: 0.4805926}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1313527593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313527591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Phrase
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 36
+  m_fontSizeBase: 36
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 1
+  m_VerticalAlignment: 256
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 2.0463715}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1313527594
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1313527591}
+  m_CullTransparentMesh: 1
 --- !u!1 &1442100476
 GameObject:
   m_ObjectHideFlags: 0
@@ -3300,7 +3513,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1584024280}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3437,7 +3649,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3572,7 +3783,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3707,7 +3917,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3844,7 +4053,6 @@ RectTransform:
   m_Children:
   - {fileID: 1442100477}
   m_Father: {fileID: 404961689}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -3976,7 +4184,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.286, y: 0}
   m_AnchorMax: {x: 0.4092077, y: 0.33052528}
@@ -4052,7 +4259,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 20, y: 0, z: 0}
   m_AnchorMin: {x: 0.34600002, y: 0.24242419}
   m_AnchorMax: {x: 0.4251981, y: 0.55863136}
@@ -4140,7 +4346,6 @@ RectTransform:
   - {fileID: 1160762416}
   - {fileID: 685401150}
   m_Father: {fileID: 404961689}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4242,7 +4447,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 139813679}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -4378,7 +4582,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1809776050}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -4474,7 +4677,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 25, y: 180, z: 0}
   m_AnchorMin: {x: 0.21000001, y: 0.6533687}
   m_AnchorMax: {x: 0.27160385, y: 0.8124193}
@@ -4550,7 +4752,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.238, y: 0.43158078}
   m_AnchorMax: {x: 0.298, y: 0.5212121}
@@ -4626,7 +4827,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 25, y: 0, z: 0}
   m_AnchorMin: {x: 0.286, y: 0.6533687}
   m_AnchorMax: {x: 0.35160387, y: 0.8205253}
@@ -4702,7 +4902,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.298, y: 0.596}
   m_AnchorMax: {x: 0.342, y: 0.64526266}
@@ -4778,7 +4977,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 683118299}
-  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.21000001, y: 0.53426266}
   m_AnchorMax: {x: 0.2571981, y: 0.609}
@@ -4823,3 +5021,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2122357253}
   m_CullTransparentMesh: 1
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 963194228}
+  - {fileID: 705507995}
+  - {fileID: 404961689}
+  - {fileID: 1253910790}

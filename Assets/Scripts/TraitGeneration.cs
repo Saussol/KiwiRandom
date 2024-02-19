@@ -9,7 +9,7 @@ public class TraitGeneration : MonoBehaviour
     public int age; // 
 
     private string[] nameGirl = new string[] { "Lea", "Marine", "Ines", "Fanny", "juliette", "Mathilda", "Lynoa", "Lena", "Celia", "Berenice" };
-    private string[] nameBoy = new string[] { "Davide", "Nicolas", "Romain", "Julien", "Damien", "Gabin", "Adrien", "Jean", "Jules", "Arthur" };
+    private string[] nameBoy = new string[] { "David", "Nicolas", "Romain", "Julien", "Damien", "Gabin", "Adrien", "Jean", "Jules", "Arthur" };
 
     private string[] corpulence = new string[] { "Sac d'os","Tres Tres maigre", "Tres maigre", "Maigre", "Standar", "Musclé", "Gros", "Tres gros", "Tres tres gros", "Obesiter Legendaire" };
     private string[] taille = new string[] { "Jouet 10cm","Gnome 50cm", "Nain 1m", "De petit taille 1m50", "Standar 1m75", "Grand 1m90", "Tres Grand 2m", "Geant 2m20", "Titan 3m", "immeuble 6m"};
@@ -27,6 +27,7 @@ public class TraitGeneration : MonoBehaviour
     public TextMeshProUGUI trait02Text;
     public TextMeshProUGUI trait03Text;
     public TextMeshProUGUI traitText;
+    public TextMeshProUGUI phraseTraitText;
 
     public TMP_InputField inputField;
     public RandomSeedController randomSeed;
@@ -116,7 +117,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[0]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
-                //Sentence();
+                Sentence();
 
 
                 //Body
@@ -167,7 +168,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[1]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -215,7 +216,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[1]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[2]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -263,7 +264,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[0]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[1]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[2]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -311,7 +312,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[0]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[1]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -359,7 +360,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[0]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -407,7 +408,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -455,7 +456,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -503,7 +504,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -551,7 +552,7 @@ public class TraitGeneration : MonoBehaviour
                 trait01Text.text = "Trait 01 : " + trait01[seedList[4]];
                 trait02Text.text = "Trait 02 : " + trait02[seedList[5]];
                 trait03Text.text = "Trait 03 : " + trait03[seedList[6]];
-                //Sentence();
+                Sentence();
 
                 randomisationPerso.corps.sprite = randomisationPerso.corpsL[seedList[0]];
                 randomisationPerso.antennesD.sprite = randomisationPerso.antennesDL[seedList[1]];
@@ -592,21 +593,303 @@ public class TraitGeneration : MonoBehaviour
     }
 
 
-    /*void Sentence(string trait01)
+    void Sentence(/*string trait01*/)
     {
-
-
-        if (trait01[seedList[0]] == "Adroit")
+        
+            if (trait01[seedList[0]] == "Adroit")
         {
             int index = 0;
-            if (!isMen) index = 1;
-            if (age > 499) index = 2;
-            traitText.text = adroit[index];
 
+            if (!isMen)
+            {
+                index = 1;
+            }
+             phraseTraitText.text = randomisationPerso.adroit[index];
+        }
+        if (trait01[seedList[0]] == "Affectueux")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.affectueux[index];
+        }
+        if (trait01[seedList[0]] == "Aimable")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.aimable[index];
+        }
+        if (trait01[seedList[0]] == "Agressif")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.agressif[index];
+        }
+        if (trait01[seedList[0]] == "Amusant")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.amusant[index];
+        }
+        if (trait01[seedList[0]] == "Arrogant")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.arrogant[index];
+        }
+        if (trait01[seedList[0]] == "Audacieux")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.audacieux[index];
+        }
+        if (trait01[seedList[0]] == "Attachant")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.attachant[index];
+        }
+        if (trait01[seedList[0]] == "Attendrissant")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.attendrissant[index];
+        }
+        if (trait01[seedList[0]] == "Associal")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.associal[index];
+        }
+        if (trait01[seedList[0]] == "Beau-Parleur")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.beauParleur[index];
+        }
+        if (trait01[seedList[0]] == "Bete")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.bete[index];
+        }
+        if (trait01[seedList[0]] == "Bienveillant")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.bienveillant[index];
+        }
+        if (trait01[seedList[0]] == "Brave")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.brave[index];
+        }
+        if (trait01[seedList[0]] == "Brutal")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.brutal[index];
+        }
+        if (trait01[seedList[0]] == "Belliqueux")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.belliqueux[index];
+        }
+        if (trait01[seedList[0]] == "Bout-En-Train")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.boutEnTrain[index];
+        }
+        if (trait01[seedList[0]] == "Brillant")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.brillant[index];
+        }
+        if (trait01[seedList[0]] == "Bavard")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.bavard[index];
+        }
+        if (trait01[seedList[0]] == "Chanceux")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.chanceux[index];
+        }
+        if (trait01[seedList[0]] == "Chaleureux")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.chaleureux[index];
+        }
+        if (trait01[seedList[0]] == "Cingle")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.cingle[index];
+        }
+        if (trait01[seedList[0]] == "Comique")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.comique[index];
+        }
+        if (trait01[seedList[0]] == "Consciencieux")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.consciencieux[index];
+        }
+        if (trait01[seedList[0]] == "Courageux")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.courageux[index];
+        }
+        if (trait01[seedList[0]] == "Cupide")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.cupide[index];
+        }
+        if (trait01[seedList[0]] == "Creatif")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.creatif[index];
+        }
+        if (trait01[seedList[0]] == "Courtois")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.courtois[index];
+        }
+        if (trait01[seedList[0]] == "Cynique")
+        {
+            int index = 0;
+
+            if (!isMen)
+            {
+                index = 1;
+            }
+            phraseTraitText.text = randomisationPerso.cynique[index];
         }
 
-        string sentence = "Voici " + (isMen ? "un garçon" : "une fille") + " nommé " + nameText.text.Substring(7) + ", âgé de " + ageText.text.Substring(6) + " an(s)" +
-            ", de corpulence " + corpuText.text.Substring(13) + " et de taille " + tailleText.text.Substring(8) + ". Ses traits sont : " +
-            trait01Text.text.Substring(10) + ", " + trait02Text.text.Substring(10) + ", " + trait03Text.text.Substring(10) + ".";
-    }*/
+        string sentence = "Voici " + (isMen ? "un garçon" : "une fille") + " nommé " + nameText.text.Substring(7) + ",\n\n âgé de " + ageText.text.Substring(6) + " an(s)" +
+            ",\n\n de corpulence " + corpuText.text.Substring(13) + "\n\n et de taille " + tailleText.text.Substring(8) + ".\n\n Ses traits sont : " +
+            trait01Text.text.Substring(10) + ",\n\n " + trait02Text.text.Substring(10) + ", " + trait03Text.text.Substring(10) + ".";
+        traitText.text = sentence;
+    }
 }
